@@ -51,11 +51,19 @@ export default function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza pizzaObj={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi
+            beatae excepturi magni enim officia maiores quod odio nostrum
+            impedit, fugit magnam debitis! Omnis officia dolorum nostrum neque
+            fugit suscipit
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We're still working on our Menu. Please come back later.</p>
       )}
